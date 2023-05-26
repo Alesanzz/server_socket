@@ -23,17 +23,20 @@ WIEWS
 Community Chat - Product Manager
 </h2>
 <br>
-<h4 align="center">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h4>
+
 | Community Chat | Product Manager |
 | --- | --- |
 | http://localhost:3000/chat-socket | http://localhost:3000/realtimeproducts |
 | Application that works as a chat, where any user can connect to the community and communicate with any connected member. The chat operates completely autonomously and continuously as long as the server is active. | Application that functions as a product manager, which provides a visual display of all existing products at the moment, and on the other hand, allows the creation of a new product. All of this without the need to refresh the page. |
+|  ||  |
 
 <br>
 <h4>Community Chat</h4>
+
 ![screenshot1](./public/images/chat-home.png)
 ![screenshot2](./public/images/chat-working.png)
 <h4>Product Manager</h4>
+
 ![screenshot3](./public/images/products-home.png)
 
  <br> <br>
