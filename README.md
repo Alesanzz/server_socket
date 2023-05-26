@@ -1,19 +1,40 @@
 <h1 align="center">
 SOCKET SERVER
 </h1> 
+
+<p align="justify">A socket server is a software component that allows network communication between multiple clients and a server using the socket programming interface. The main features of a socket server typically include:
+
+- Socket Creation: It creates a socket to listen for client connections.
+- Connection Handling: It accepts and manages incoming client connections.
+- Multithreading or Asynchronous Operations: It handles multiple client connections concurrently.
+- Request Processing: It processes client requests according to the defined protocol or application logic.
+- Data Serialization/Deserialization: It converts structured data for transmission over the network.
+- Event Handling: It responds to events such as data arrival or client disconnection.
+- Security: It ensures secure communication through encryption, authentication, and access control.
+- Scalability: It handles a large number of client connections and distributes load if needed.
+- Error Handling: It handles errors and provides appropriate responses to clients.
+- Logging and Monitoring: It logs server activity and monitors performance.</p>
+<br>
+
 <h2 align="center">
-Community Chat and Product Manager
+WIEWS
 </h2>
+<h2 align="center">
+Community Chat - Product Manager
+</h2>
+<br>
+<h4 align="center">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h4>
+| Community Chat | Product Manager |
+| --- | --- |
+| http://localhost:3000/chat-socket | http://localhost:3000/realtimeproducts |
+| Application that works as a chat, where any user can connect to the community and communicate with any connected member. The chat operates completely autonomously and continuously as long as the server is active. | Application that functions as a product manager, which provides a visual display of all existing products at the moment, and on the other hand, allows the creation of a new product. All of this without the need to refresh the page. |
 
-<h4 align="center">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h4>
 <br>
-<h4 align="center">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h4>
-<br>
-<h4 align="center">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h4>
-<br>
-
+<h4>Community Chat</h4>
 ![screenshot1](./public/images/chat-home.png)
 ![screenshot2](./public/images/chat-working.png)
+<h4>Product Manager</h4>
+![screenshot3](./public/images/products-home.png)
 
  <br> <br>
 ##  Developed with Express
