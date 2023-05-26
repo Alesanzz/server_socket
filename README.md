@@ -2,8 +2,7 @@
 SOCKET SERVER
 </h1> 
 <h2 align="center">
-Community chat
-Product manager
+Community Chat and Product Manager
 </h2>
 
 <h4 align="center">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h4>
@@ -28,7 +27,7 @@ Product manager
 ## Technologies used
 
 - JavaScript (46%)
-- HANDDLEBARS (43%)
+- Handlebars (43%)
 - CSS (11%)
 
 ## Keywords

@@ -4,6 +4,7 @@ import { Server } from "socket.io";
 
 import { sourceDirname } from "./middlewares/dirname.js";
 import { routerVistaChat } from "./routes/chat.vista.router.js";
+import { routerRealTimeProducts } from "./routes/products-realtime-routes.js";
 
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.static("public"));
 
 //endpoint tipo vista servidor socket
 app.use("/chat-socket", routerVistaChat);
+app.use("/realtimeproducts", routerRealTimeProducts);
 
 
 //para confirgurar el servidor socket hay que guardar el servidor http en una variable y luego ejecurtar el "Server" de socket.io sobre nuestro servidor http
@@ -33,8 +35,9 @@ const httpServer = app.listen(port, () => {
 });
 const socketServer = new Server(httpServer);
 
-let msgs = [];
 
+//socket para el chat comunitario
+let msgs = [];
 socketServer.on("connection", (socket) => {
   socket.on("msg_front_to_back", (msg) => {
     msgs.push(msg);
@@ -48,3 +51,30 @@ socketServer.on("connection", (socket) => {
     //segundo parametro = un objeto que se manda al front
   });
 });
+
+//socket para el product manager
+import { productManager } from "./modules/products-manager.js";
+socketServer.on("connection", (socket) => {
+  socket.on("new-product-created", async (newProduct) => {
+    try {
+      await productManager.addProduct(newProduct);
+      
+      let allProducts = await productManager.getProducts();
+      socketServer.emit("all-the-products", allProducts);
+    } catch (error) {
+      console.log(error);
+    }
+  });
+  
+  socket.on("delete-product", async (iidd) => {
+    try {
+      await productManager.deleteProduct(iidd);
+  
+      let allProducts = await productManager.getProducts();
+      socketServer.emit("all-the-products", allProducts);
+    } catch (error) {
+      console.log(error);
+    }
+  });
+}); 
+
