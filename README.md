@@ -50,9 +50,9 @@ Community Chat - Product Manager
 
 ## Technologies used
 
-- JavaScript (46%)
-- Handlebars (43%)
-- CSS (11%)
+- JavaScript (70%)
+- Handlebars (25%)
+- CSS (5%)
 
 ## Keywords
 
