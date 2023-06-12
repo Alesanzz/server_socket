@@ -17,11 +17,9 @@ SOCKET SERVER
 <br>
 
 <h2 align="center">
-WIEWS
+VIEWS
 </h2>
-<h2 align="center">
-Community Chat - Product Manager
-</h2>
+
 <br>
 
 | Community Chat | Product Manager |
@@ -63,7 +61,7 @@ Community Chat - Product Manager
 
 ## Setup
 
-Translation: "To clone locally and be able to run this application in its entirety, you will need two programs previously installed on your computer. The first one is [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com) included) and the second one is [Git](https://git-scm.com).
+To clone locally and be able to run this application in its entirety, you will need two programs previously installed on your computer. The first one is [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com) included) and the second one is [Git](https://git-scm.com).
 <br>
 <br>
 Once these prerequisites are resolved, the following is a step-by-step explanation of how to perform the cloning process properly:
@@ -89,13 +87,9 @@ $ http://localhost:3000/realtimeproducts
 > **Important**
 > If you are using Linux Bash for Windows, we recommend you refer to the following [guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/).
 
-
-
 <br><br>
 
 ---
-
- 
 ## Author
 
 GitHub [@Alesanzz](https://github.com/Alesanzz)  
